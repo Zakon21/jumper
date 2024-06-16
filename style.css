@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    color: white;
 }
 #window{
     margin: auto;
@@ -18,13 +19,13 @@
     cursor: pointer;
 }
 #gamezone{
-    background-color: rgb(129, 215, 255);
+    background-color: rgb(46, 0, 65);
     height: 70%;
     width: 100%;
     display: flex;
 }
 #ground{
-    background-color: rgb(129, 255, 213);
+    background-color: rgb(39, 39, 39);
     height: 30%;
     width: 100%;
     z-index: 101;
@@ -36,16 +37,13 @@
     position: relative;
     top:93%;
     left: 10%;
-    animation-name: movProtagonist;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
     left: 10%;
 }
 @keyframes movProtagonist{
     from{
         top:93%;
     }
-    40%{
+    50%{
         top: 60%;
     }
     to{
@@ -53,24 +51,76 @@
     }
 }
 
-.stone{
+@keyframes movDownProtagonist{
+    from{
+        top:75%
+    }
+    
+    to{
+        top:93%;
+    }
+}
+
+#stone{
     background-color: rgb(119, 119, 119);
     width: 30px;
     height: 60px;
     border-radius: 100%;
     position: relative;
-    animation-name: movStone;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    top: 85%;
+    left: 110%;
 }
 @keyframes movStone{
-    from{
-        top: 85%;
-        left: 110%;
-    }
     to{
         top: 85%;
         left: -15%;
     }
 }
 
+#stoneTwo{
+    background-color: rgb(119, 119, 119);
+    width: 30px;
+    height: 60px;
+    border-radius: 100%;
+    position: relative;
+    top: 85%;
+    left: 110%;
+}
+@keyframes movStone{
+    to{
+        top: 85%;
+        left: -15%;
+    }
+}
+
+#stoneThree{
+    background-color: rgb(119, 119, 119);
+    width: 30px;
+    height: 60px;
+    border-radius: 100%;
+    position: relative;
+    top: 85%;
+    left: 110%;
+}
+@keyframes movStone{
+    to{
+        top: 85%;
+        left: -15%;
+    }
+}
+
+#stoneFour{
+    background-color: rgb(119, 119, 119);
+    width: 30px;
+    height: 60px;
+    border-radius: 100%;
+    position: relative;
+    top: 85%;
+    left: 110%;
+}
+@keyframes movStone{
+    to{
+        top: 85%;
+        left: -15%;
+    }
+}
